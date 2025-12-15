@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using QuestionsApp.Contracts;
+using QuestionsApp.Contracts.Questions;
 
-namespace QuestionsApp.Presenters.Controllers;
+namespace QuestionsApp.Presenters.Controllers.Questions;
 
 [ApiController]
 [Route("[controller]")]

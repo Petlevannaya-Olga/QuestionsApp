@@ -30,7 +30,7 @@ public class Report
     /// <summary>
     /// Статус жалобы
     /// </summary>
-    public Status Status { get; set; } = Status.Open;
+    public ReportStatus ReportStatus { get; set; } = ReportStatus.OPEN;
     
     /// <summary>
     /// Дата создания
