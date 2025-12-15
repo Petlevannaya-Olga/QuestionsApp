@@ -10,18 +10,18 @@ public class Question
     /// <summary>
     /// Заголовок вопроса
     /// </summary>
-    public required string Title { get; set; }
+    public string Title { get; set; }
 
     /// <summary>
     /// Текст вопроса
     /// </summary>
-    public required string Text { get; set; }
+    public string Text { get; set; }
 
     /// <summary>
     /// Идентификатор пользователя, задавшего вопрос
     /// </summary>
-    public required Guid UserId { get; set; }
-    
+    public Guid UserId { get; set; }
+
     /// <summary>
     /// Скриншот
     /// </summary>
@@ -41,4 +41,23 @@ public class Question
     /// Список тегов
     /// </summary>
     public List<Guid> Tags { get; set; } = [];
+
+    /// <summary>
+    /// Статус вопроса
+    /// </summary>
+    public QuestionStatus Status { get; set; } = QuestionStatus.OPEN;
+
+    public Question(
+        string title,
+        string text,
+        Guid userId,
+        Guid? screenshotId,
+        IEnumerable<Guid> tags)
+    {
+        Title = title;
+        Text = text;
+        UserId = userId;
+        ScreenshotId = screenshotId;
+        Tags = tags.ToList();
+    }
 }
