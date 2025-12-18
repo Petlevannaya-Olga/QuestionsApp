@@ -10,7 +10,7 @@ public interface IQuestionRepository
 
     Task<Guid> DeleteAsync(Guid id, CancellationToken cancellationToken);
 
-    Task<Question> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+    Task<Question?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
     
     Task<int> GetOpenQuestionsByUserIdAsync(Guid userId, CancellationToken cancellationToken);
 }

@@ -1,4 +1,5 @@
 ﻿using QuestionsApp.Application;
+using QuestionsApp.Infrastructure.Postgres;
 
 namespace QuestionsApp.Web;
 
@@ -8,7 +9,8 @@ public static class DependencyInjection
     {
         return services
             .AddWebDependencies()
-            .AddApplication();
+            .AddApplication()
+            .AddPostgresInfrastructure();
     }
 
     private static IServiceCollection AddWebDependencies(this IServiceCollection services)
