@@ -14,6 +14,7 @@
     <ItemGroup>
       <ProjectReference Include="..\QuestionsApp.Application\QuestionsApp.Application.csproj" />
       <ProjectReference Include="..\QuestionsApp.Domain\QuestionsApp.Domain.csproj" />
+      <ProjectReference Include="..\QuestionsApp.Infrastructure.Postgres\QuestionsApp.Infrastructure.Postgres.csproj" />
       <ProjectReference Include="..\QuestionsApp.Presenters\QuestionsApp.Presenters.csproj" />
     </ItemGroup>
 

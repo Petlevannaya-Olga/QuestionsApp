@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsApp.Contracts", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsApp.Application", "src\QuestionsApp.Application\QuestionsApp.Application.csproj", "{16903CF2-A093-4713-92D8-ED98FE687A7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsApp.Infrastructure.Postgres", "src\QuestionsApp.Infrastructure.Postgres\QuestionsApp.Infrastructure.Postgres.csproj", "{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{16903CF2-A093-4713-92D8-ED98FE687A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16903CF2-A093-4713-92D8-ED98FE687A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16903CF2-A093-4713-92D8-ED98FE687A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B3C86771-41E9-4A20-8EAB-CAE0AD9921D5} = {C554675C-F561-4EC4-A180-CEE998B5F244}
@@ -51,5 +57,6 @@ Global
 		{B5341489-D4FF-447D-BAD1-FA67151242CE} = {C554675C-F561-4EC4-A180-CEE998B5F244}
 		{D0EEEFB7-5166-4180-82E5-1F37634BB200} = {C554675C-F561-4EC4-A180-CEE998B5F244}
 		{16903CF2-A093-4713-92D8-ED98FE687A7A} = {C554675C-F561-4EC4-A180-CEE998B5F244}
+		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA} = {C554675C-F561-4EC4-A180-CEE998B5F244}
 	EndGlobalSection
 EndGlobal
