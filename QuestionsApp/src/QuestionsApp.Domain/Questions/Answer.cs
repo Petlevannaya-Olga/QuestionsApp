@@ -21,4 +21,9 @@ public class Answer
     /// Ссылка на вопрос
     /// </summary>
     public required Question Question { get; set; }
+
+    /// <summary>
+    /// Рейтинг
+    /// </summary>
+    public long Rating { get; set; }
 }
