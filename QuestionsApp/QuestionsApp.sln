@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsApp.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsApp.Infrastructure.Postgres", "src\QuestionsApp.Infrastructure.Postgres\QuestionsApp.Infrastructure.Postgres.csproj", "{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{B1805E3D-9220-470E-8433-877A69B56867}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1805E3D-9220-470E-8433-877A69B56867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1805E3D-9220-470E-8433-877A69B56867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1805E3D-9220-470E-8433-877A69B56867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1805E3D-9220-470E-8433-877A69B56867}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B3C86771-41E9-4A20-8EAB-CAE0AD9921D5} = {C554675C-F561-4EC4-A180-CEE998B5F244}
@@ -58,5 +64,6 @@ Global
 		{D0EEEFB7-5166-4180-82E5-1F37634BB200} = {C554675C-F561-4EC4-A180-CEE998B5F244}
 		{16903CF2-A093-4713-92D8-ED98FE687A7A} = {C554675C-F561-4EC4-A180-CEE998B5F244}
 		{B9CAFE68-48CE-41B6-BB02-7EC2C1F752AA} = {C554675C-F561-4EC4-A180-CEE998B5F244}
+		{B1805E3D-9220-470E-8433-877A69B56867} = {C554675C-F561-4EC4-A180-CEE998B5F244}
 	EndGlobalSection
 EndGlobal
