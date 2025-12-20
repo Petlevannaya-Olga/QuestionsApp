@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using QuestionsApp.Application.Abstractions;
+using QuestionsApp.Application.Questions.Features.CreateQuestion;
 using QuestionsApp.Contracts.Questions;
+using QuestionsApp.Presenters.Extensions;
 
 namespace QuestionsApp.Presenters.Controllers.Questions;
 
@@ -9,10 +12,13 @@ public class QuestionsController : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> Create(
+        [FromServices] ICommandHandler<Guid, CreateQuestionCommand> handler,
         [FromBody] CreateQuestionDto dto,
         CancellationToken cancellationToken)
     {
-        return Ok("Question created");
+        var command = new CreateQuestionCommand(dto);
+        var result = await handler.Handle(command, cancellationToken);
+        return result.IsFailure ? result.Error.ToResponse() : Ok(result.Value);
     }
 
     [HttpGet]
