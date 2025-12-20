@@ -8,7 +8,7 @@ public partial class Errors
     {
         public static Error TooManyQuestions() =>
             Error.Failure(
-                "too.many.questions", 
+                "too.many.questions",
                 "Пользователь не может открыть больше 3 вопросов");
     }
 }

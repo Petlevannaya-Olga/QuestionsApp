@@ -4,7 +4,7 @@ using QuestionsApp.Domain.Questions;
 
 namespace QuestionsApp.Infrastructure.Postgres;
 
-public class QuestionsEfCoreRepository(QuestionsDbContext dbContext) : IQuestionRepository
+public class QuestionsEfCoreRepository(QuestionsReadDbContext readDbContext) : IQuestionRepository
 {
     public async Task<Guid> AddAsync(Question question, CancellationToken cancellationToken)
     {
@@ -23,7 +23,7 @@ public class QuestionsEfCoreRepository(QuestionsDbContext dbContext) : IQuestion
 
     public async Task<Question?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
-        return await dbContext
+        return await readDbContext
             .Questions
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }

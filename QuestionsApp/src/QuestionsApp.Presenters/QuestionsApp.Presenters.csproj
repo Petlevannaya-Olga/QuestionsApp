@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\QuestionsApp.Application\QuestionsApp.Application.csproj" />
       <ProjectReference Include="..\QuestionsApp.Contracts\QuestionsApp.Contracts.csproj" />
       <ProjectReference Include="..\QuestionsApp.Domain\QuestionsApp.Domain.csproj" />
       <ProjectReference Include="..\Shared\Shared.csproj" />
